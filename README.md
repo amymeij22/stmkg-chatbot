@@ -59,4 +59,3 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 I hope this project contributes significantly to improving information and service delivery at STMKG. Feel free to explore, use, and contribute to the project!
-
