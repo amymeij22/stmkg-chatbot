@@ -49,12 +49,11 @@ The Fine-Tuned Gemini model demonstrated excellent results in understanding and 
 - Add multilingual support to cater to a wider audience.
 
 ## Contributors
-- Project Lead: [Your Name]
+- Project Lead: Ahmad Meijlan Yasir
 - Institution: Sekolah Tinggi Meteorologi Klimatologi dan Geofisika (STMKG)
-- Contact: [Your Contact Information]
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-We hope this project contributes significantly to improving information and service delivery at STMKG. Feel free to explore, use, and contribute to the project!
+I hope this project contributes significantly to improving information and service delivery at STMKG. Feel free to explore, use, and contribute to the project!
