@@ -36,19 +36,10 @@ This project focuses on the development of an intelligent and effective chatbot 
 ## Results
 The Fine-Tuned Gemini model demonstrated excellent results in understanding and responding to user queries. The chatbot system is responsive, user-friendly, and informative, making it an effective tool for providing information and services at STMKG.
 
-## Recommendations
-- Regularly update the training dataset to maintain relevance and improve the chatbot's performance.
-- Consider integrating the chatbot with other platforms to expand its reach and utility.
-
 ## Usage
 1. Access the chatbot through the provided web interface.
 2. Ask questions related to STMKG, weather, or earthquakes.
 3. Receive accurate and real-time responses tailored to your queries.
-
-## Future Enhancements
-- Expand the dataset with more diverse examples.
-- Integrate the chatbot with social media platforms for broader accessibility.
-- Add multilingual support to cater to a wider audience.
 
 ## Contributors
 - Project Lead: Ahmad Meijlan Yasir
