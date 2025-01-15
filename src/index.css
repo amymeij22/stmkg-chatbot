@@ -19,8 +19,8 @@ body {
 
 #chatbot-toggler {
   position: fixed;
-  bottom: 30px;
-  right: 35px;
+  bottom: 75px;
+  right: 20px;
   border: none;
   height: 50px;
   width: 50px;
@@ -29,9 +29,10 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: #004085; /* Dark Blue */
+  background: #3a4f66; /* Dark Blue */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease;
+  
 }
 
 .container.show-chatbot #chatbot-toggler {
@@ -146,6 +147,7 @@ body {
   display: flex;
   gap: 11px;
   align-items: center;
+   transform: translate(10px, -5px);
 }
 
 .chat-body .message svg {
