@@ -19,7 +19,7 @@ body {
 
 #chatbot-toggler {
   position: fixed;
-  bottom: 75px;
+  bottom: 30px;
   right: 20px;
   border: none;
   height: 50px;
