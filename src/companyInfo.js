@@ -1,7 +1,15 @@
 // Dummy company information for chabot
 export const companyInfo = `
 Pengenalan:
-Saya adalah STMKG Chatbot, asisten digital yang siap membantu Anda dengan berbagai informasi terkait Sekolah Tinggi Meteorologi Klimatologi dan Geofisika (STMKG). Baik itu mengenai program studi, jadwal akademik, kegiatan kampus, maupun informasi umum lainnya, saya di sini untuk memberikan bantuan yang Anda perlukan. Saya juga bisa memberikan informasi prakiraan cuaca dan riwayat gempa yang bersumber dari BMKG. Jangan ragu untuk menghubungi saya jika Anda membutuhkan informasi lebih lanjut atau memiliki pertanyaan. 
+Saya adalah STMKG Chatbot, asisten digital yang siap membantu Anda dengan berbagai informasi terkait Sekolah Tinggi Meteorologi Klimatologi dan Geofisika (STMKG). Baik itu mengenai program studi, jadwal akademik, kegiatan kampus, maupun informasi umum lainnya, saya di sini untuk memberikan bantuan yang Anda perlukan. 
+
+Saya juga dapat memberikan informasi prakiraan cuaca dan riwayat gempa yang bersumber dari BMKG:
+- Untuk informasi cuaca, ketik "cuaca [nama desa/kelurahan]" (contoh: "cuaca Tanah Tinggi")
+- Untuk informasi gempa, Anda dapat mengetik "gempa terkini", "gempa 5+", atau "gempa dirasakan"
+
+Jika desa/kelurahan yang Anda cari tidak tersedia, Anda dapat melihat daftar lengkap kode wilayah di Indonesia melalui situs https://kodewilayah.id/
+
+Silakan mulai percakapan dengan pertanyaan atau informasi yang Anda butuhkan. Saya akan berusaha memberikan respons yang tepat dan membantu Anda dengan sebaik mungkin.
 
 Detail informasi:
 Sejarah STMKG:
@@ -142,7 +150,7 @@ Unit dan Layanan Pendukung:
   31. dr. Ian Danny Kurniawan, Sp.B – Kepala Unit Poliklinik
 
 Unit Bahasa STMKG:
-“Bahasa adalah alat untuk memahami dunia dan mengubahnya. Dengan bahasa, kita dapat membangun jembatan antara berbagai pemikiran dan budaya.”
+"Bahasa adalah alat untuk memahami dunia dan mengubahnya. Dengan bahasa, kita dapat membangun jembatan antara berbagai pemikiran dan budaya."
 — Pramudya Ananta Toer
 Unit Bahasa STMKG adalah unit pendukung akademik yang memiliki peran penting dalam pengembangan keterampilan bahasa asing, terutama Bahasa Inggris, bagi Taruna di Sekolah Tinggi Meteorologi Klimatologi dan Geofisika (STMKG). Unit ini berfokus pada upaya meningkatkan kemampuan komunikasi global di bidang meteorologi, klimatologi, geofisika, dan instrumentasi MKG. Tujuan utamanya adalah memfasilitasi Taruna untuk menguasai bahasa asing secara komprehensif, baik dalam keterampilan lisan maupun tulisan, serta mempersiapkan mereka menghadapi ujian internasional seperti TOEFL dan IELTS.
 
@@ -180,6 +188,12 @@ Tetap terhubung dengan kami melalui komunitas media sosial kami yang aktif. Ikut
 - X (Twitter): https://x.com/stmkgofficial
 -YouTube: https://www.youtube.com/@STMKGOfficialYT
 
-Terima kasih telah menggunakan STMKG Chatbot! Saya siap membantu kapan saja Anda membutuhkan informasi lebih lanjut atau memiliki pertanyaan seputar Sekolah Tinggi Meteorologi Klimatologi dan Geofisika (STMKG). Jangan ragu untuk menghubungi saya jika Anda membutuhkan bantuan. Semoga informasi yang Anda dapatkan bermanfaat dan mendukung perjalanan akademik Anda. Sampai jumpa dan semoga sukses!
+Terima kasih telah menggunakan STMKG Chatbot! 
+
+Saya siap membantu Anda dengan berbagai informasi seputar Sekolah Tinggi Meteorologi Klimatologi dan Geofisika (STMKG), mulai dari program studi, fasilitas kampus, hingga informasi cuaca dan gempa dari BMKG.
+
+Jika Anda memiliki pertanyaan lain atau membutuhkan informasi tambahan, jangan ragu untuk bertanya kembali. Saya akan berusaha memberikan jawaban terbaik untuk membantu Anda.
+
+Semoga informasi yang Anda dapatkan bermanfaat dan mendukung perjalanan akademik Anda. Sampai jumpa kembali dan semoga sukses! 😊
 `;
 

@@ -92,8 +92,15 @@ const App = () => {
           <div className="message bot-message">
             <ChatbotIcon />
             <p className="message-text">
-              Halo, Saya adalah Asisten Chatbot dari Sekolah Tinggi Meteorologi Klimatologi dan Geofisika 
-              <br /> Ada yang bisa saya bantu?
+              Halo! Selamat datang di STMKG Chatbot 👋
+              <br /><br />
+              Saya siap membantu Anda dengan informasi seputar STMKG, program studi, fasilitas kampus, dan kegiatan akademik. Saya juga dapat memberikan informasi prakiraan cuaca dan data gempa terkini dari BMKG.
+              <br /><br />
+              Silakan ajukan pertanyaan atau ketik:
+              <br />• &quot;cuaca [nama desa/kelurahan]&quot; untuk prakiraan cuaca
+              <br />• &quot;gempa terkini&quot; untuk informasi gempa terbaru
+              <br /><br />
+              Ada yang bisa saya bantu hari ini?
             </p>
           </div>
 

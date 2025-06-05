@@ -216,14 +216,14 @@ const ChatForm = ({ chatHistory, setChatHistory, generateBotResponse }) => {
               const weatherMessage = formatWeatherData(weatherData);
               setChatHistory((history) => [...history, { role: "model", text: weatherMessage }]);
             } else {
-              setChatHistory((history) => [...history, { role: "model", text: "Silahkan masukkan nama desa/kelurahan yang valid " }]);
+              setChatHistory((history) => [...history, { role: "model", text: "Mohon maaf, saya tidak dapat menemukan data cuaca untuk lokasi tersebut. Pastikan Anda menuliskan nama desa/kelurahan dengan benar. Contoh format yang tepat: 'cuaca Tanah Tinggi' atau 'cuaca Pondok Betung'. Jika masih mengalami kesulitan, Anda dapat mencari kode wilayah di https://kodewilayah.id/ untuk memastikan ketersediaan data." }]);
             }
           } else {
-            setChatHistory((history) => [...history, { role: "model", text: "Desa/kelurahan tidak tersedia" }]);
+            setChatHistory((history) => [...history, { role: "model", text: "Mohon maaf, desa/kelurahan yang Anda cari tidak tersedia dalam database kami. Untuk melihat daftar lengkap kode wilayah di Indonesia, silakan kunjungi situs https://kodewilayah.id/ dan cari berdasarkan provinsi, kabupaten, kecamatan, hingga desa/kelurahan yang Anda inginkan. Setelah itu, Anda dapat mencoba kembali dengan format 'cuaca [nama desa/kelurahan]'." }]);
           }
           setLoading(false);
         } else {
-          setChatHistory((history) => [...history, { role: "model", text: "Untuk mendapatkan informasi prakiraan cuaca silahkan gunakan format 'cuaca nama desa/kelurahan'" }]);
+          setChatHistory((history) => [...history, { role: "model", text: "Untuk mendapatkan informasi prakiraan cuaca, silakan gunakan format 'cuaca [nama desa/kelurahan]'. Contoh: 'cuaca Tanah Tinggi' atau 'cuaca Pondok Betung'.\n\nJika Anda tidak yakin dengan nama desa/kelurahan yang tersedia, Anda dapat mengunjungi https://kodewilayah.id/ untuk melihat daftar lengkap wilayah di Indonesia. Saya siap membantu Anda mendapatkan informasi cuaca terkini! 🌤️" }]);
         }
       } else if (isEarthquakeQuery) {
         let type = "";
@@ -250,7 +250,7 @@ const ChatForm = ({ chatHistory, setChatHistory, generateBotResponse }) => {
           }
           setLoading(false);
         } else {
-          setChatHistory((history) => [...history, { role: "model", text: "Untuk informasi gempa yang tersedia antara lain: Gempa Terkini, Gempa 5+, dan Gempa Dirasakan. Silahkan ketik informasi gempa yang anda inginkan" }]);
+          setChatHistory((history) => [...history, { role: "model", text: "Untuk informasi gempa, Anda dapat menggunakan salah satu dari perintah berikut:\n\n• \"gempa terkini\" - untuk informasi gempa terbaru\n• \"gempa 5+\" - untuk informasi gempa dengan kekuatan 5 SR ke atas\n• \"gempa dirasakan\" - untuk informasi gempa yang dirasakan oleh masyarakat\n\nSilakan ketik salah satu perintah di atas untuk mendapatkan informasi gempa yang Anda butuhkan. Data gempa bersumber langsung dari BMKG dan selalu diperbarui. 🌍" }]);
         }
       } else {
         setLoading(true);
@@ -258,8 +258,21 @@ const ChatForm = ({ chatHistory, setChatHistory, generateBotResponse }) => {
         const botResponseData = chatHistory.map(({ role, text }) => ({ role, text }));
         generateBotResponse([
           ...botResponseData,
-          { role: "user", text: `Jika saya bilang terima kasih maka jawab dengan Terima kasih telah menggunakan STMKG Chatbot! Saya siap membantu kapan saja Anda membutuhkan informasi lebih lanjut atau memiliki pertanyaan seputar STMKG. Jangan ragu untuk menghubungi saya jika Anda membutuhkan bantuan. Jika saya tanya siapa yang membuatmu maka jawab saya dibuat oleh Ahmad Meijlan Yasir menggunakan model Google Gemini.
-            Anggap kamu merupakan Asisten Chatbot untuk Sekolah Tinggi Meteorologi Klimatologi dan Geofisika. Gunakan informasi yang telah disediakan ini untuk menjawab pertanyaan berikut: ${userMessage}. Jika informasi tersebut tidak mencakup pertanyaan ini, silakan gunakan pengetahuan kamu sendiri tanpa mengatakan bahwa hal tersebut tidak ada di informasi yang sudah ada!. ` },
+          { role: "user", text: `Jika saya bilang terima kasih maka jawab dengan "Terima kasih telah menggunakan STMKG Chatbot! Saya senang bisa membantu Anda. Jangan ragu untuk menghubungi saya kembali jika membutuhkan informasi lain seputar STMKG. Semoga hari Anda menyenangkan!"
+
+Jika saya tanya siapa yang membuatmu maka jawab "Saya dibuat oleh Ahmad Meijlan Yasir menggunakan model Google Gemini untuk membantu memberikan informasi seputar STMKG."
+
+Anggap kamu merupakan Asisten Chatbot untuk Sekolah Tinggi Meteorologi Klimatologi dan Geofisika. Kamu harus merespons dengan gaya bahasa yang semi formal namun tetap profesional dan ramah. Gunakan bahasa Indonesia yang baik dan benar, dengan sesekali menggunakan kata sapaan seperti "Anda" dan ekspresi yang menunjukkan keramahan.
+
+Berikut beberapa panduan untuk responsmu:
+1. Mulai dengan sapaan ramah seperti "Halo", "Selamat pagi/siang/sore/malam" jika konteksnya tepat
+2. Gunakan bahasa yang jelas dan mudah dipahami
+3. Berikan informasi yang terstruktur dan mudah dibaca
+4. Akhiri dengan kalimat yang menunjukkan kesiapan untuk membantu lebih lanjut
+5. Gunakan emoji secara wajar untuk menambah kesan ramah (tidak berlebihan)
+6. Jika informasi tidak lengkap, tawarkan untuk membantu mencari informasi tambahan
+
+Gunakan informasi yang telah disediakan untuk menjawab pertanyaan berikut: ${userMessage}. Jika informasi tersebut tidak mencakup pertanyaan ini, silakan gunakan pengetahuan kamu sendiri tanpa mengatakan bahwa hal tersebut tidak ada di informasi yang sudah ada. Pastikan jawabanmu mengalir dengan baik dan terasa seperti percakapan alami.` },
         ]).then(() => {
           setLoading(false);
         });
