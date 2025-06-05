@@ -186,7 +186,7 @@ Tetap terhubung dengan kami melalui komunitas media sosial kami yang aktif. Ikut
 - Facebook: https://www.facebook.com/stmkgofficial/
 - Instagram: https://www.instagram.com/stmkgofficial/
 - X (Twitter): https://x.com/stmkgofficial
--YouTube: https://www.youtube.com/@STMKGOfficialYT
+- YouTube: https://www.youtube.com/@STMKGOfficialYT
 
 Terima kasih telah menggunakan STMKG Chatbot! 
 
